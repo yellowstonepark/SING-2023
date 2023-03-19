@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FR232MMSGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FR232MMSGD');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Flow</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+  html, body, .neon {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+      font-family: monospace, sans-serif;
+  }
+  .neon {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+  }
+  .child {
+      position: absolute;
+      z-index: 1;
+      top:0;
+      left:0;
+      max-height: 100%;
+      overflow-y: scroll;
+  }
+  
+    .glow {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%, 250%);
+  text-align: center; 
+  font-size: 5vw;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: 'Bad Script', cursive;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1b0c13, 0 0 40px #676d91, 0 0 50px #2b253d, 0 0 60px #0f00e6, 0 0 70px #2300e6;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1a1747, 0 0 40px #a8a9e9, 0 0 50px #0400ff, 0 0 60px #001aff, 0 0 70px #684dff, 0 0 80px #5f4dff;
+  }
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.responsive {
+  width: 90%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px #fff;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.back {
+  background-color: #f1f1f1;
+  color: black;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  width: 100%;
+}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.col-sm-3 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .col-sm-3 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .names {
+    font-size: 4vw;
+  }
+}
+
+iframe {
+  padding: 20px;
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+img {
+  opacity: .8;
+}
+
+.group {
+  margin-top: 5px;
+  border: 0.2rem solid #fff;
+  border-radius: 1rem;
+  padding: 0em;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  box-shadow: 0 0 .1rem #fff,
+            0 0 .1rem #fff,
+            0 0 1rem #ddd,
+            0 0 0.4rem #ddd,
+            0 0 1.4rem #ddd,
+            inset 0 0 0.65rem #ddd;
+}
+
+.group img {
+  border-radius: 1rem;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="neon">
+    <div class="child">
+      <div class="container-fluid" style="position: relative; text-align: center;">
+        <div class="container-fluid group" style="position: relative; text-align: center;">
+                <img src="pictures/group/FlowGroupPic.jpeg" alt="Wallpaper_9" style="width:100%; height: 100%;">
+            <div class="glow">Flow
+            </div>
+        </div>
+
+        <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-3">
+            <h1 style="padding: 10px; text-align: center; color: #e9bda8;">Crew</h1>
+              <div class="names" style="margin: 10px; text-align: center; color: #e9b5a8; ">
+                <b>Directors:</b><br>
+                Alejandra Yau-Smith (S) <br>
+                Kara Yip (S) <br>
+                Fiona Chen (S) <br>
+                <b>Assistant Directors:</b><br>
+                Sarah Lin (S) <br>
+                Sonya Cisse (F) <br>
+                Adam Oh (F) <br>
+              <b>Members:</b><br>
+              Ada Ye (S) <br>
+              Addison Lin (S) <br>
+              Annie Chen (F) <br>
+              Danny Shao (S) <br>
+              Emi Shimada (S) <br>
+              Emma Yang (S) <br>
+              Emerie Ngai (F) <br>
+              Fiona Huang (F) <br>
+              Grace Jung (F) <br>
+              Jason Chao (S) <br>
+              Jessie Zhang (S) <br>
+              Judy Namkoong (S) <br>
+              Kaia Berger (S) <br>
+              Kayla Wang (F) <br>
+              Keyra Minchala (S) <br>
+              Leo Ye (S) <br>
+              Lina Zheng (F) <br>
+              Lucia Liu (S) <br>
+              Luke In (S) <br>
+              Mimi Shin (S) <br>
+              Mina Yeh (S) <br>
+              Phoebe Lu (S) <br>
+              Sandra Gao (F) <br>
+              Sarah Yu (F) <br>
+              Sophia Pan (S) <br>
+              Sophia Tom (S) <br>
+              Sebastien Poget (S) <br>
+              Tabitha Lin (S) <br>
+              Tiffany Qu (F) <br>
+              Yasong Feng (S) <br>
+          </div>
+          </div>
+
+
+          <div class="col-sm-9">
+            <div class="row">
+             <div class="column">
+               <img src="pictures/flow_directors.jpeg">
+               <img src="pictures/Flowi1.jpeg">
+               <img src="pictures/Flowi3.jpeg">
+               <img src="pictures/flowi4.jpeg">
+               <img src="pictures/Flowi6.jpeg">
+               <img src="pictures/Flowi10.jpeg">
+               <img src="pictures/Flowi11.jpeg">
+               <img src="pictures/flowi64.jpeg">
+               <img src="pictures/Flowi35.jpeg">
+               <img src="pictures/Flowi39.jpeg">
+               <img src="pictures/Flowi40.jpeg">
+               <img src="pictures/Flowi41.jpeg">
+               <img src="pictures/flowi57.jpeg">
+               <img src="pictures/Flowi43.jpeg">
+               <img src="pictures/flowi51.jpeg">
+               <img src="pictures/Flowi47.jpeg">
+               <img src="pictures/Flowi48.jpeg">
+             </div>
+             <div class="column">
+               <img src="pictures/Flowi12.jpeg">
+               <img src="pictures/Flowi13.jpeg">
+               <img src="pictures/Flowi14.jpeg">
+               <img src="pictures/flowi5.jpeg">
+               <img src="pictures/Flowi15.jpeg">
+               <img src="pictures/Flowi16.jpeg">
+               <img src="pictures/Flowi17.jpeg">
+               <img src="pictures/Flowi18.jpeg">
+               <img src="pictures/Flowi19.jpeg">
+               <img src="pictures/Flowi36.jpeg">
+               <img src="pictures/Flowi44.jpeg">
+               <img src="pictures/flowi52.jpeg">
+               <img src="pictures/flowi59.jpeg">
+               <img src="pictures/flowi45.jpeg">
+               <img src="pictures/Flowi63.jpeg">
+             </div>
+             <div class="column">
+               <img src="pictures/Flowi20.jpeg">
+               <img src="pictures/Flowi21.jpeg">
+               <img src="pictures/Flowi22.jpeg">
+               <img src="pictures/Flowi23.jpeg">
+               <img src="pictures/flowi7.jpeg">
+               <img src="pictures/Flowi24.jpeg">
+               <img src="pictures/flowi53.jpeg">
+               <img src="pictures/Flowi25.jpeg">
+               <img src="pictures/flowi9.jpeg">
+               <img src="pictures/Flowi34.jpeg">
+               <img src="pictures/Flowi2.jpeg">
+               <img src="pictures/Flowi37.jpeg">
+               <img src="pictures/flowi58.jpeg">
+               <img src="pictures/Flowi45.jpeg">
+               <img src="pictures/Flowi62.jpeg">
+               <img src="pictures/flowi49.jpeg">
+               <img src="pictures/flowi61.jpeg">
+               <img src="pictures/Flowi56.jpeg">
+             </div>
+             <div class="column">
+               <img src="pictures/Flowi26.jpeg">
+               <img src="pictures/Flowi27.jpeg">
+               <img src="pictures/Flowi28.jpeg">
+               <img src="pictures/Flowi29.jpeg">
+               <img src="pictures/flowi55.jpeg">
+               <img src="pictures/Flowi30.jpeg">
+               <img src="pictures/Flowi31.jpeg">
+               <img src="pictures/flowi60.jpeg">
+               <img src="pictures/flowi8.jpeg">
+               <img src="pictures/Flowi32.jpeg">
+               <img src="pictures/Flowi33.jpeg">
+               <img src="pictures/Flowi38.jpeg">
+               <img src="pictures/Flowi42.jpeg">
+               <img src="pictures/Flowi46.jpeg">
+               <img src="pictures/Flowi50.jpeg">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <a href="index.html" class="back">Back</a>
+    </div>
+  </div>
+  <script type="module">
+    import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
+
+window.onload = function () {
+
+const windowWidth = window.innerWidth;
+
+console.log(windowWidth);
+
+if (windowWidth < 600) {
+    neonCursor({
+  el: document.querySelector('.neon'),
+  shaderPoints: 16,
+  curvePoints: 80,
+  curveLerp: 0.5,
+  radius1: 5,
+  radius2: 30,
+  velocityTreshold: 10,
+  sleepRadiusX: 50,
+  sleepRadiusY: 50,
+  sleepTimeCoefX: 0.0025,
+  sleepTimeCoefY: 0.0025
+})
+
+
+} else {
+
+neonCursor({
+  el: document.querySelector('.neon'),
+  shaderPoints: 16,
+  curvePoints: 80,
+  curveLerp: 0.5,
+  radius1: 5,
+  radius2: 30,
+  velocityTreshold: 10,
+  sleepRadiusX: 175,
+  sleepRadiusY: 175,
+  sleepTimeCoefX: 0.0025,
+  sleepTimeCoefY: 0.0025
+})
+};
+
+}
+</script>
+</body>
+</html>

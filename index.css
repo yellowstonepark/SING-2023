@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
+html, body, .neon {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	/*background-color: #111;*/
+}
+
+.flex {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.block {
+	display: block;
+}
+
+.header {
+	width: 100%;
+	left: 0;
+	z-index: 100;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.neon {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.child {
+	position: absolute;
+	z-index: 1;
+	top:0;
+	left:0;
+	max-height: 100%;
+	overflow-y: scroll;
+}
+
+.logo {
+	height: 150px;
+	z-index: 2;
+}
+
+#logo {
+	height: 130px;
+	padding: 20px;
+	z-index: 2;
+}
+
+.title {
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+/*	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,34,1) 100%);*/
+}
+
+#title {
+	font-family: 'Bad Script', cursive;
+
+	background: rgb(237,221,237);
+
+	padding: 5px;
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+
+    -webkit-animation: Animation 15s ease infinite;
+    -moz-animation: Animation 15s ease infinite;
+    animation: Animation 15s ease infinite;
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+	#title {
+	  font-size: 17vmin;
+	}
+  }
+  
+  @media screen and (min-width: 600px) {
+	#title {
+	  font-size: 10vmin;
+	}
+  }
+  
+
+
+@media screen and (max-width: 600px) {
+	.title-text::after {
+	  content: "\A";
+	  white-space: pre;
+	}
+  }
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+#subtitle {
+
+	font-family: 'Titillium Web', sans-serif;
+	text-transform: uppercase;
+	/*font-style: italic;*/
+	font-size: 30px;
+	background: rgb(237,221,237);
+
+	padding: 5px;
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+
+    -webkit-animation: Animation 15s ease infinite;
+    -moz-animation: Animation 15s ease infinite;
+    animation: Animation 15s ease infinite;
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.icon {
+	height: 75%;
+	width: 75%;
+	background-color: rgba(250,250,250,.6);
+	border-radius: 50%;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid pink;
+	cursor: pointer;
+	z-index: 101;
+}
+
+
+.iconspace {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100px;
+	z-index: 100;
+}
+
+
+.lines {
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin: 5px 0;
+	padding: 0%;
+	background-color: #111;
+}
+
+/* Define the keyframes for the animation */
+@keyframes makeX1 {
+	0% {
+	  transform: rotate(0deg);
+	  margin: 5px 0;
+	}
+	25% {
+	  transform: rotate(11.25deg);
+	}
+	50% {
+	  transform: rotate(23deg);
+	}
+	75% {
+	  transform: rotate(33.25deg);
+	}
+	100% {
+	  transform: rotate(45deg);
+	  margin: -1.5px;
+	}
+  }
+
+  @keyframes makeX2 {
+	0% {
+		transform: rotate(0deg);
+		margin: 5px 0;
+	  }
+	  25% {
+		transform: rotate(-11.25deg);
+	  }
+	  50% {
+		transform: rotate(-23deg);
+	  }
+	  75% {
+		transform: rotate(-33.25deg);
+	  }
+	  100% {
+		transform: rotate(-45deg);
+		margin: -1.5px 0;
+	  }
+	}
+  
+
+  
+  /* Apply the animation to the lines when the button is clicked */
+  .animate1 {
+	animation: makeX1 1s ease forwards 0s;
+	
+  }
+  
+  .animate1r {
+	animation: makeX1 1s ease forwards 0s reverse;
+  }
+  
+  .animate2 {
+	animation: makeX2 1s ease forwards 0s;
+  }
+  
+  .animate2r {
+	animation: makeX2 1s ease forwards 0s reverse;
+  }
+  
+  
+
+#menu {
+	display: none;
+	list-style: none;
+	flex-wrap: wrap;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99;
+	justify-content: center;
+	overflow-y:auto;
+  }
+
+  @media screen and (max-width: 600px) {
+	#menu {
+		padding: 0;
+		padding-top: 100px;
+	}
+  }
+
+  @media screen and (min-width: 601px) {
+	#menu {
+		padding-left: 0;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-top: 0;
+	}
+  }
+  
+  #menu a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	font-size: 3vh;
+	font-weight: 400;
+  }
+
+  #menu img {
+	padding: 15px;
+	border-radius: 20%;
+	height: 10vh;
+  }
+
+  .navBox {
+	justify-content: center;
+	display: flex;
+	flex-direction:column-reverse;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+	transition: opacity 400ms ease;
+  }
+
+  #menu:has(.navBox:hover) .navBox:not(:hover) {
+	opacity: 0.3;
+  }
+
+  .directors {
+	min-height: 100vh;
+/*	background: rgba(0,0,0,1);
+	background: linear-gradient(0deg, rgb(39, 0, 38) 0%, rgb(0, 0, 0) 100%); */
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .dP {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 20vh;
+  }
+
+  .directorsPhoto {
+	position: relative;
+  }
+
+  .directorsPhoto img 
+  	{
+	border-radius: 4%;
+	opacity: .6;
+	width: 40vw;
+  }
+
+
+@media screen and (max-width: 600px) {
+        .directorsPhoto img {
+                width: 90vw;
+        }
+	.dP {
+		flex-direction: column;
+	}
+	.whatIs {
+		width: 95vw;
+	}
+}
+
+@media screen and (min-width: 601px) {
+        .directorsPhoto img {
+                width: 40vw;
+        }
+	.dP {
+		flex-direction: row;
+	}
+	.whatIs {
+		width: 40vw;
+	}
+}
+
+  .whatIs {
+	text-align: center;
+	color: white;
+	font-family: monospace;
+	font-size: 24px;
+	padding-bottom: 25px;
+  }
+
+  .all img {
+	  max-width: 90vw;
+	  max-height: 90vh;
+}
+.all {
+	height: 100vh;
+	max-width: 100%;
+	opacity: 0.8;
+}
+/*
+@media (pointer: coarse)  {
+	 mobile device */
+footer {
+	 height: fit-content; 
+	 background-color: rgba(0,0,0,.1);
+	 color: white;
+	 font-family: monospace, sans-serif;
+	 display: block;
+	 padding: 20px;
+	 margin-top: 35px;
+}
